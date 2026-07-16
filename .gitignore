@@ -1,0 +1,13 @@
+/vendor/
+/storage/papers/*
+!/storage/papers/.gitignore
+/storage/previews/*
+!/storage/previews/.gitignore
+/storage/logs/*
+!/storage/logs/.gitignore
+.DS_Store
+Thumbs.db
+*.log
+.idea/
+config.bat
+node_modules

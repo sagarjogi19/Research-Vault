@@ -1,0 +1,11 @@
+RewriteEngine On
+
+# Deny access to hidden files
+RewriteRule (^|/)\.(?!well-known) - [F]
+
+# Serve existing files/directories directly
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Front controller
+RewriteRule ^ index.php [L]
